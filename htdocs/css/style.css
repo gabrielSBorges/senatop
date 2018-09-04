@@ -1,0 +1,9 @@
+body{
+    background-image: url("../imgs/background.jpg");
+}
+
+.caixa{
+    color: white;
+    background-color: RGBA(0,0,0,0.5);
+    border-radius: 10px;
+}
