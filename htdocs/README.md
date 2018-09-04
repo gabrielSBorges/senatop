@@ -1,3 +1,3 @@
-# Senatop-Challenge
-# Senatop-Challenge
-# Senatop-Challenge
+# THIS IS JUST A SENAI GAME
+# MORE THAN A GAME, IT'S A BIG DEAL.
+# IT'S NOT SENAI, IT'S SENATOP!
