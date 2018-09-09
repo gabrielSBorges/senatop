@@ -1,9 +1,9 @@
 this.mensagensNpcs = [];
 
 this.mensagensNpcs[0] = {
-	[0] : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
-	[1] : "labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamcot",
-	[2] : "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+	[0] : "A vida de empreendedor não é fácil, eu preciso me esforçar muito para alcançar meu objetivo.",
+	[1] : "Por sorte existem instituições como essa que nos preparam para esse mundo...",
+	[2] : "",
 };
 this.mensagensNpcs[1] = {
 	[0] : "Estou nesta instituição já fazem 2 longos anos, o tempo passa rápido e pelo visto eu aprendo",
@@ -11,14 +11,14 @@ this.mensagensNpcs[1] = {
 	[2] : "",
 };
 this.mensagensNpcs[2] = {
-	[0] : "É melhor sair daqui senão eu vo te dar um salve...",
-	[1] : "",
+	[0] : "É triste saber que está insvestindo seu dinheiro em algo que não está dando muito retorno.",
+	[1] : "Minhas aulas não estão sendo lá as melhores...",
 	[2] : "",
 };
 this.mensagensNpcs[3] = {
-	[0] : "ãÃAA oHHHN",
-	[1] : "",
-	[2] : "",
+	[0] : "As experiências acumuladas demonstram que o aumento do diálogo entre os diferentes setores",
+	[1] : "produtivos afeta positivamente  a correta previsão dos conhecimentos estratégicos atingindo  a",
+	[2] : "excelência.",
 };
 this.mensagensNpcs[4] = {
 	[0] : "",

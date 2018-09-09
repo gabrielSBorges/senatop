@@ -1,4 +1,4 @@
-function cenaExploracao(){
+function cenaExploracao(jogadorSprite){
 	this.cnv = document.querySelector("canvas");
 	this.ctx = cnv.getContext("2d");
 
@@ -6,20 +6,10 @@ function cenaExploracao(){
 	var cenarioBackground = new Image();
 	cenarioBackground.src = "imgs/cenas/mapa_exploracao.png";
 
-	var batalhaBackground = new Image();
-	batalhaBackground.src = "imgs/cenas/cena_batalha.png";
-
-	var jogadorSprite = new Image();
-	jogadorSprite.src = "imgs/personagens/protagonistas/menina_sprite.png";
-
 //CRIAÇÃO DOS ELEMENTOS/OBJETOS
 	this.cenario = new Cena(cenarioBackground);
 	this.cenario.width = 4272;
 	this.cenario.height = 6912;
-
-	this.cenaBatalha = new Cena(batalhaBackground);
-	this.cenaBatalha.width = 800;
-	this.cenaBatalha.height = 600;
 
 	this.jogador = new Jogador(jogadorSprite);
 	this.jogador.posicaoX = 2264;
@@ -92,4 +82,4 @@ function cenaExploracao(){
 	cenarioBackground.onload = function(){
 		iniciar();
 	}
-}
+};

@@ -1,7 +1,7 @@
-function Personagem(img, tipo, id){
+function Personagem(img){
 //Atributos da classe
-	this.tipo = tipo;
-	this.id = id;
+	this.tipo = 0;
+	this.id = 0;
 	this.srcX = 0;
 	this.srcY = 0;
 	this.largura = 32;
