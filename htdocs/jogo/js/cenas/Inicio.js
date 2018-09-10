@@ -10,6 +10,20 @@
 
 	var mensagemAtual = 0;
 	var pronto = false;
+	
+	var linha1 = "";
+	var linha2 = "";
+	var linha3 = "";
+	
+	var texto1 = "";
+	var texto2 = "";
+	var texto3 = "";
+	
+	var textoCor = "#2d3436";
+    var textoFonte = "19px Arial Black";
+    var textoAlinhamento = "left";
+	var textoPosX = 348;
+	var textoPosY = 135;
 
 //CRIAÇÃO DAS IMAGENS
 	var cenarioBackground = new Image();
@@ -58,11 +72,13 @@
 			case DIREITA:
 				if (mensagemAtual < 4) {
 						mensagemAtual += 1;
+						console.log(mensagemAtual);
 				}
 				break;
 			case ESQUERDA:
 				if (mensagemAtual > 0) {
 						mensagemAtual -= 1;
+						console.log(mensagemAtual);
 				}
 				break;
 			case F:
@@ -81,6 +97,49 @@
 		}
 	}
 
+	function desenhaTexto(){
+		switch (mensagemAtual){
+			case 0:
+				linha1 = mensagensInicio[0][0];
+				linha2 = mensagensInicio[0][1];
+				linha3 = mensagensInicio[0][2];
+				break;
+			case 1:
+				linha1 = mensagensInicio[1][0];
+				linha2 = mensagensInicio[1][1];
+				linha3 = mensagensInicio[1][2];
+				break;
+			case 2:
+				linha1 = mensagensInicio[2][0];
+				linha2 = mensagensInicio[2][1];
+				linha3 = mensagensInicio[2][2];
+				break;
+			case 3:
+				linha1 = mensagensInicio[3][0];
+				linha2 = mensagensInicio[3][1];
+				linha3 = mensagensInicio[3][2];
+				break;
+			case 4:
+				linha1 = mensagensInicio[4][0];
+				linha2 = mensagensInicio[4][1];
+				linha3 = mensagensInicio[4][2];
+				break;
+		}
+		
+		ctx.fillStyle = textoCor;
+        ctx.font = textoFonte;
+        ctx.textAlign = textoAlinhamento;
+		
+		texto1 = linha1;
+        ctx.fillText(texto1, textoPosX, textoPosY);
+
+        texto2 = linha2;
+        ctx.fillText(texto2, textoPosX, textoPosY + 25);
+
+		texto3 = linha3;
+        ctx.fillText(texto3, textoPosX, textoPosY + 50);
+	}
+	
 	//DESENHA OS ELEMENTOS NA TELA
 	function desenhaElementos(){
 		ctx.save();
@@ -88,17 +147,14 @@
 		this.apresentador.desenha(ctx);
 		this.caixaMensagem.desenha(ctx);
 		ctx.restore();
+		
+		desenhaTexto();
 	}
 
 	//ATUALIZAÇÃO E INICIALIZAÇÃO
-	function update(){
-
-	}
-
 	function loop(){
 	    window.requestAnimationFrame(loop, cnv);
 	    desenhaElementos();
-	    update();
 	}
 
 	function iniciar() {
