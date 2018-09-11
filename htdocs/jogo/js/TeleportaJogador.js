@@ -1,74 +1,34 @@
-function criaPortas(){
-	this.portasEntrada = [];
-	this.portasSaida = [];
+function criaPortas() {
+  this.portas = [];
 
-	var portaEntrada1 = {
-		esquerda : 2428,
-		direita : 2468,
-		cima : 1445,
-		baixo : 1500
-	};
-	this.portasEntrada.push(portaEntrada1);
-	/*
-	var portaEntrada2 = {
-		esquerda : ,
-		direita : ,
-		cima : ,
-		baixo : 
-	};
-	this.portasEntrada.push(portaEntrada2);
+  //Entrada1
+  var porta1 = new Porta(3314,3425,6370,6400,3368,6358);
+  this.portas.push(porta1);
+  //Saida1
+  var porta2 = new Porta(3314,3425,6370,6400,2456,1526);
+  this.portas.push(porta2);
 
-	var portaEntrada3 = {
-		esquerda : ,
-		direita : ,
-		cima : ,
-		baixo : 
-	};	
-	this.portasEntrada.push(portaEntrada3);
-	*/
-	var portaSaida1 = {
-		esquerda : 3314,
-		direita : 3425,
-		cima : 6370,
-		baixo : 6400
-	};
-	this.portasSaida.push(portaSaida1);
-	/*
-	var portaSaida2 = {
-		esquerda : ,
-		direita : ,
-		cima : ,
-		baixo : 
-	};
-	this.portasSaida.push(portaSaida2);
+  /*
+  var porta3 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta3);
 
-	var portaSaida3 = {
-		esquerda : ,
-		direita : ,
-		cima : ,
-		baixo : 
-	};
-	this.portasSaida.push(portaSaida3);
-	*/	
+  var porta4 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta4);
+
+  var porta5 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta5);
+
+  var porta6 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta6);
+  */
 }
 
-function teleportaJogador(jogador){
-	//ENTRADA
-	for (var i in portasEntrada) {
-		var porta = portasEntrada[i];
-
-		if ((jogador.posicaoX > porta.esquerda && jogador.posicaoX < porta.direita) && (jogador.posicaoY > porta.cima && jogador.posicaoY < porta.baixo)){
+function teleportaJogador(jogadorX, jogadorY){
+  for (var i in portas){
+    var porta = portas[i];
+    if ((jogador.posicaoX > porta.paredeEsquerda && jogador.posicaoX < porta.paredeDireita) && (jogador.posicaoY > porta.paredeCima && jogador.posicaoY < porta.paredeBaixo)) {
 			jogador.posicaoX = 3368;
-			jogador.posicaoY = 6358;
-		}
-	}
-	//SAÍDA
-	for (var i in portasSaida) {
-		var porta = portasSaida[i];
-
-		if ((jogador.posicaoX > porta.esquerda && jogador.posicaoX < porta.direita) && (jogador.posicaoY > porta.cima && jogador.posicaoY < porta.baixo)){
-			jogador.posicaoX = 2456;
-			jogador.posicaoY = 1526;
-		}
-	}
+      jogador.posicaoY = 6358;
+    }
+  }
 }

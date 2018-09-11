@@ -59,9 +59,9 @@ function cenaExploracao(jogadorSprite){
 
 	//ATUALIZAÇÃO E INICIALIZAÇÃO
 	function update(){
-		jogador.movimento(this.cenario.pausado);
-		camera.movimento(jogador.posicaoX, jogador.posicaoY, jogador.largura, jogador.altura);
-		colisaoCoordenadas(jogador);
+			jogador.movimento(this.cenario.pausado);
+			camera.movimento(jogador.posicaoX, jogador.posicaoY, jogador.largura, jogador.altura);
+			colisaoCoordenadas(jogador);
 	}
 
 	function loop(){
@@ -71,15 +71,16 @@ function cenaExploracao(jogadorSprite){
 	    habilitaDialogo(jogador.proximidadeDireita, jogador.proximidadeEsquerda, jogador.proximidadeCima, jogador.proximidadeBaixo);
 	    jogador.verificaArea(jogador.posicaoX, jogador.posicaoY, jogador.largura, jogador.altura);
 	    jogador.verificaProximidadeInteracao(jogador.posicaoX, jogador.posicaoY, jogador.largura, jogador.altura);
-	    teleportaJogador(jogador);
+
+			teleportaJogador(jogador.posicaoX, jogador.posicaoY);
 	}
 
 	function iniciar() {
 	    this.cenario.pausado = false;
-		loop();
+			loop();
 	}
 
 	cenarioBackground.onload = function(){
-		iniciar();
+			iniciar();
 	}
 };
