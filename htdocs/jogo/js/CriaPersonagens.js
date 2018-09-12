@@ -16,28 +16,34 @@ function criaPersonagens(){
   npcSprite4.src = "imgs/personagens/npcs/npc_4.png";
 
   var npcSprite5 = new Image();
-  npcSprite4.src = "imgs/personagens/npcs/npc_5.png";
+  npcSprite5.src = "imgs/personagens/npcs/npc_5.png";
 
   var npcSprite6 = new Image();
-  npcSprite4.src = "imgs/personagens/npcs/npc_6.png";
+  npcSprite6.src = "imgs/personagens/npcs/npc_6.png";
 
   var npcSprite7 = new Image();
-  npcSprite4.src = "imgs/personagens/npcs/npc_7.png";
+  npcSprite7.src = "imgs/personagens/npcs/npc_7.png";
 
   var npcSprite8 = new Image();
-  npcSprite4.src = "imgs/personagens/npcs/npc_8.png";
+  npcSprite8.src = "imgs/personagens/npcs/npc_8.png";
 
   var npcSprite9 = new Image();
-  npcSprite4.src = "imgs/personagens/npcs/npc_9.png";
+  npcSprite9.src = "imgs/personagens/npcs/npc_9.png";
 
   var npcSprite10 = new Image();
-  npcSprite4.src = "imgs/personagens/npcs/npc_10.png";
+  npcSprite10.src = "imgs/personagens/npcs/npc_10.png";
+
+  var npcSprite11 = new Image();
+  npcSprite11.src = "imgs/personagens/npcs/npc_11.png";
 
 //Sprites Desafiantes -----------------------
 
 //Sprites Professores -----------------------
   var profSprite1 = new Image();
   profSprite1.src = "imgs/personagens/professores/prof_1.png";
+
+  var profSprite2 = new Image();
+  profSprite2.src = "imgs/personagens/professores/prof_2.png";
 //Sprites Elite -----------------------------
 
 // O B J E T O S ****************************
