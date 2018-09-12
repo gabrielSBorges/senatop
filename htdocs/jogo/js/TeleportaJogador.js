@@ -1,54 +1,34 @@
 function criaPortas() {
-  this.portasEntrada = [];
-  this.portasSaida = [];
-
-									
+  this.portas = [];
 
   //Entrada1
-  this.portaEntrada1 = new Porta(3314,3425,6370,6400,3368,6358);
-  this.portasEntrada.push(this.portaEntrada1);
- 
- /*
-  var portaEntrada2 = new Porta(3314,3425,6370,6400,2456,1526);
-  this.portas.push(portaEntrada2);
+  var porta1 = new Porta(3314,3425,6370,6400,3368,6358);
+  this.portas.push(porta1);
+  //Saida1
+  var porta2 = new Porta(3314,3425,6370,6400,2456,1526);
+  this.portas.push(porta2);
 
-  var portaEntrada3 = new Porta(0,0,0,0,0,0);
-  this.portas.push(portaEntrada3);
-  
-  this.portaSaida1 = new Porta(3314,3425,6370,6400,2456,1526);
-  this.portasSaida.push(this.portaSaida1);
+  /*
+  var porta3 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta3);
 
-  var portaSaida2 = new Porta(0,0,0,0,0,0);
-  this.portas.push(portaSaida2);
+  var porta4 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta4);
 
-  var portaSaida3 = new Porta(0,0,0,0,0,0);
-  this.portas.push(portaSaida3);
+  var porta5 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta5);
+
+  var porta6 = new Porta(0,0,0,0,0,0);
+  this.portas.push(porta6);
   */
-  
 }
 
 function teleportaJogador(jogadorX, jogadorY){
-  for (var i in portasEntrada){
-	var porta = portasEntrada[i];
-	
-	var jogadorDentroX = 3314;//jogadorX > porta.paredeEsquerda && jogadorX < porta.paredeDireita;
-	var jogadorDentroY = 6370;//jogadorY > porta.paredeCima && jogadorY < porta.paredeBaixo;
-	
-	
-    if (jogadorX == jogadorDentroX && jogadorY == jogadorDentroY) {
-		console.log(jogadorDentroX);
-		/*
-		jogador.posicaoX = porta.jogadorPosDestinoX;
-		jogador.posicaoY = porta.jogadorPosDestinoY;
-		*/
+  for (var i in portas){
+    var porta = portas[i];
+    if ((jogador.posicaoX > porta.paredeEsquerda && jogador.posicaoX < porta.paredeDireita) && (jogador.posicaoY > porta.paredeCima && jogador.posicaoY < porta.paredeBaixo)) {
+			jogador.posicaoX = 3368;
+      jogador.posicaoY = 6358;
     }
-  }
-  
-  for (var i in portasSaida){
-	var porta = portasSaida[i];
-    if ((jogadorX < porta.paredeEsquerda && jogadorX > porta.paredeDireita) && (jogadorY < porta.paredeCima && jogadorY > porta.paredeBaixo)) {
-		jogador.posicaoX = porta.jogadorPosDestinoX;
-		jogador.posicaoY = porta.jogadorPosDestinoY;
-    }  
   }
 }

@@ -1,4 +1,13 @@
 function colisaoCoordenadas(jogador){
+//portas trancadas para o teste
+  colisao(jogador,1452,1115,250,20);
+  colisao(jogador,1730,1105,330,35);
+  colisao(jogador,2172, 1490,270,27);
+  colisao(jogador,2500, 1490,270,27);
+  colisao(jogador,404, 1020,580,15);
+  colisao(jogador,1015, 1010,282,25);
+  colisao(jogador,2207,2600,200,80);
+//------------
   colisao(jogador,1452,1115,220,20);
   colisao(jogador,1730,1105,330,35);
   colisao(jogador,2172, 1490,270,27);
@@ -68,7 +77,7 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,3839,4895,386,73);
   colisao(jogador,3694,4895,51,500);
   colisao(jogador,3502,4895,51,500);
-  colisao(jogador,3022,4895,51,500);           
+  colisao(jogador,3022,4895,51,500);
   colisao(jogador,2560,5326,967,73);
   colisao(jogador,3694,5326,467,73);
   colisao(jogador,2560,5520,370,73);
@@ -124,7 +133,7 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,190, 6055,97,10);
   colisao(jogador,190, 6486,97,10);
   colisao(jogador,860, 6486,97,10);
-  colisao(jogador,1340, 6486,97,10);   
+  colisao(jogador,1340, 6486,97,10);
   colisao(jogador,1340,5810,97,10);
   colisao(jogador,2563,5042,121,15);
   colisao(jogador,3073,5042,89,15);
@@ -193,7 +202,7 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,1395,5906,40,15);
   colisao(jogador,1492,5906,40,15);
   colisao(jogador,1589,5906,40,15);
-  colisao(jogador,1686,5906,40,15); 
+  colisao(jogador,1686,5906,40,15);
   colisao(jogador,1395,6003,40,15);
   colisao(jogador,1492,6003,40,15);
   colisao(jogador,1589,6003,40,15);
@@ -380,7 +389,7 @@ function colisaoCoordenadas(jogador){
   //Elite
 
   //Professores
-  colisao(jogador, 2620, 4987, 32, 32);  
+  colisao(jogador, 2620, 4987, 32, 32);
 
   //NPCS
   colisao(jogador, 2592, 1520, 32, 32);

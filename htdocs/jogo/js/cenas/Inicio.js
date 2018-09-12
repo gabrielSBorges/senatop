@@ -11,15 +11,16 @@
 	var mensagemAtual = 0;
 	var selecionandoPersonagem = false;
 	var pronto = false;
-	
+	var rodandoInicio = true;
+
 	var linha1 = "";
 	var linha2 = "";
 	var linha3 = "";
-	
+
 	var texto1 = "";
 	var texto2 = "";
 	var texto3 = "";
-	
+
 	var textoCor = "#2d3436";
     var textoFonte = "19px Arial Black";
     var textoAlinhamento = "left";
@@ -64,9 +65,11 @@
 
 //FUNÇÕES PRINCIPAIS
 	//MOVIMENTAÇÃO DO JOGADOR
-	window.addEventListener("keydown", function(e){
-		pressionaTecla(e);
-	}, false);
+	if (rodandoInicio){
+		window.addEventListener("keydown", function(e){
+			pressionaTecla(e);
+		}, false);
+	}
 
 	function pressionaTecla(e){
 		switch (e.keyCode){
@@ -87,21 +90,21 @@
 					console.log(pronto);
 					break;
 				}
-				
 			case M:
 				if (selecionandoPersonagem){
 					jogadorSprite.src = "imgs/personagens/protagonistas/menino_sprite.png";
 					pronto = true;
 					console.log(pronto);
 					break;
-				}				
+				}
 			case ENTER:
 				if (pronto) {
+					rodandoInicio = false;
 					cenaExploracao(jogadorSprite);
 					console.log(pronto);
 					break;
 				}
-				
+
 				if (mensagemAtual == 3){
 					selecionandoPersonagem = true;
 					console.log(pronto);
@@ -133,11 +136,11 @@
 				linha3 = mensagensInicio[3][2];
 				break;
 		}
-		
+
 		ctx.fillStyle = textoCor;
         ctx.font = textoFonte;
         ctx.textAlign = textoAlinhamento;
-		
+
 		texto1 = linha1;
         ctx.fillText(texto1, textoPosX, textoPosY);
 
@@ -147,18 +150,18 @@
 		texto3 = linha3;
         ctx.fillText(texto3, textoPosX, textoPosY + 50);
 	}
-	
+
 	//DESENHA OS ELEMENTOS NA TELA
 	function desenhaElementos(){
 		ctx.save();
 		cenario.desenha(ctx);
 		apresentador.desenha(ctx);
-		
+
 		if (!selecionandoPersonagem){
 			caixaMensagem.desenha(ctx);
 			desenhaTexto();
 		}
-		
+
 		ctx.restore();
 	}
 
