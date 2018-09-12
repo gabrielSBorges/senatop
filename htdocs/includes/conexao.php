@@ -1,9 +1,12 @@
 <?php
-	$conexao = mysqli_connect("localhost", "root", "", "db_senatop");
 
+	function abreConexao()
+    {
+        return mysqli_connect("localhost", "root", "root", "db_senatop");
+    }
 
 	function select($pQuery){
-		global $conexao;
+		$conexao = abreConexao();
 
 		$dados = mysqli_query($conexao, $pQuery) or die("A query retornou um erro");
 
@@ -25,18 +28,20 @@
 
 	function php_insert($pQuery){
 
-		global $conexao;
+        $conexao = abreConexao();
 
 		$dados = mysqli_query($conexao,$pQuery) or die("Erro ao realizar o insert");
 
+		$retorno = $dados;
+
 		mysqli_close($conexao);
 
-		return $dados;
+		return $retorno;
 	}
 
 	function sql_delete_update($pQuery){
 
-		global $conexao;
+        $conexao = abreConexao();
 
 		$dados = mysqli_query($conexao,$pQuery) or die("Erro ao executar a query");
 

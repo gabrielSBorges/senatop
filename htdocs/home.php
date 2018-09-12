@@ -36,7 +36,7 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td><?php echo $_SESSION['email'];?></td>
+                    <td><?php echo $_SESSION['usuario'];?></td>
                     <td>DaMassa</td>
                     <td>1000000</td>
                 </tr>
@@ -109,7 +109,7 @@
    
     <div class="container col-5">
     
-    <button type="button" onclick="window.location.href='Senatop-Teste/Senatop-Inicio.html';" class="btn btn-primary btn-lg btn-block">JOGAR AGORA</button>
+    <button type="button" onclick="window.location.href='jogo/jogo_inicio.html';" class="btn btn-primary btn-lg btn-block">JOGAR AGORA</button>
     <button type="button" onclick="window.location.href='perfil.php';" class="btn btn-primary btn-lg btn-block">Perfil</button>
     <button type="button" onclick="window.location.href='index.php';" class="btn btn-secondary btn-lg btn-block">Sair</button>
 
