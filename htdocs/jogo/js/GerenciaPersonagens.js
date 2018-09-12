@@ -18,6 +18,8 @@ function gerenciaPersonagens(){
     var mensagemLinha1 = "";
     var mensagemLinha2 = "";
     var mensagemLinha3 = "";
+	var mensagemLinha4 = "";
+	var mensagemLinha5 = "";
 }
 
 function desenhaPersonagem(ctx, areaDireita, areaEsquerda, areaCima, areaBaixo){
@@ -57,21 +59,29 @@ function habilitaDialogo(proximidadeDireita, proximidadeEsquerda, proximidadeCim
           mensagemLinha1 = mensagensNpcs[personagemID][0];
           mensagemLinha2 = mensagensNpcs[personagemID][1];
           mensagemLinha3 = mensagensNpcs[personagemID][2];
+		  mensagemLinha3 = mensagensNpcs[personagemID][3];
+		  mensagemLinha3 = mensagensNpcs[personagemID][4];
           break;
         case 1:
           mensagemLinha1 = mensagensDesafiantes[personagemID][0];
           mensagemLinha2 = mensagensDesafiantes[personagemID][1];
           mensagemLinha3 = mensagensDesafiantes[personagemID][2];
+		  mensagemLinha3 = mensagensDesafiantes[personagemID][3];
+		  mensagemLinha3 = mensagensDesafiantes[personagemID][4];
           break;
         case 2:
           mensagemLinha1 = mensagensProfessores[personagemID][0];
           mensagemLinha2 = mensagensProfessores[personagemID][1];
           mensagemLinha3 = mensagensProfessores[personagemID][2];
+		  mensagemLinha3 = mensagensProfessores[personagemID][3];
+		  mensagemLinha3 = mensagensProfessores[personagemID][4];
           break;
         case 3:
           mensagemLinha1 = mensagensElite[personagemID][0];
           mensagemLinha2 = mensagensElite[personagemID][1];
           mensagemLinha3 = mensagensElite[personagemID][2];
+		  mensagemLinha3 = mensagensElite[personagemID][3];
+		  mensagemLinha3 = mensagensElite[personagemID][4];
           break;
       }
       break;
