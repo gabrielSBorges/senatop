@@ -1,10 +1,10 @@
 this.mensagensProfessores = [];
 
 this.mensagensProfessores[0] = {
-	[0] : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
-	[1] : "mas este texto é só um teste muito bem elaborado por sinal que puxa vida eu não sei oq é iss",
-	[2] : "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-	[3] : "",
+	[0] : "Eai novato, beleza cara?! Já ouviu falar do GitHub? É uma plataforma de controle de versão.",
+	[1] : "É uma plataforma de controle de versão. A propósito eu ouvi boatos de que na floresta tem  ",
+	[2] : "um estudante que conheçe muuuito sobre PHP, muitas vezes chamam ele de louco! Você deveria ",
+	[3] : "falar com ele. Vai que você aprende algo.",
 	[4] : "",
 };
 this.mensagensProfessores[1] = {

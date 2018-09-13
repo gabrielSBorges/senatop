@@ -3,9 +3,9 @@ this.mensagensNpcs = [];
 this.mensagensNpcs[0] = {
 	[0] : "A vida de empreendedor não é fácil, eu preciso me esforçar muito para alcançar meu objetivo.",
 	[1] : "Por sorte existem instituições como essa que nos preparam para esse mundo...",
-	[2] : "",
-	[3] : "",
-	[4] : "",
+	[2] : "A propósito este é o bloco C, seguindo para esquerda você encontrará os demais blocos,",
+	[3] : "como o bloco B e A, na direita temos uma floresta, tome cuidado quando estiver por lá!",
+	[4] : "Há boatos de que existe um estudante louco por aquelas bandas!!",
 };
 this.mensagensNpcs[1] = {
 	[0] : "Estou nesta instituição já fazem 2 longos anos, o tempo passa rápido e pelo visto eu aprendo",
@@ -22,10 +22,10 @@ this.mensagensNpcs[2] = {
 	[4] : "",
 };
 this.mensagensNpcs[3] = {
-	[0] : "As experiências acumuladas demonstram que o aumento do diálogo entre os diferentes setores",
-	[1] : "produtivos afeta positivamente  a correta previsão dos conhecimentos estratégicos atingindo  a",
-	[2] : "excelência.",
-	[3] : "",
+	[0] : "Olá novato, bem vindo ao SENATOP! Espero que você aprenda muitas coisas aqui dentro!",
+	[1] : "Para iniciarmos seu aprendizado, vá até o bloco C conversar com o professor Jean para",
+	[2] : "enfrentar seu primeiro desafio! Caso esteja com duvida de como prosseguir, tente",
+	[3] : "conversar com os NPC's pelo mapa. Boa sorte!!",
 	[4] : "",
 };
 this.mensagensNpcs[4] = {
@@ -85,15 +85,15 @@ this.mensagensNpcs[11] = {
 	[4] : "",
 };
 this.mensagensNpcs[12] = {
-	[0] : "",
-	[1] : "",
+	[0] : "Háa, já que o professor saiu da sala, bora taca o terror",
+	[1] : "HAHSHAHSHAHSAHS",
 	[2] : "",
 	[3] : "",
 	[4] : "",
 };
 this.mensagensNpcs[13] = {
-	[0] : "",
-	[1] : "",
+	[0] : "Eu tenho um pouco de medo dos caras que estão ali dentro,",
+	[1] : "ouvi falar de algumas desistências depois disso...",
 	[2] : "",
 	[3] : "",
 	[4] : "",
