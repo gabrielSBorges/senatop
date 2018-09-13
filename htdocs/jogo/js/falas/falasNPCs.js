@@ -29,9 +29,9 @@ this.mensagensNpcs[3] = {
 	[4] : "",
 };
 this.mensagensNpcs[4] = {
-	[0] : "",
-	[1] : "",
-	[2] : "",
+	[0] : "Dizem que quanto mais inteligência a pessoa adquire, mais triste ela fica. Bom... Eu ",
+	[1] : "não consigo mais sentir nada. Depois que começei a aprender sobre PHP, minha vida social",
+	[2] : "acabou.",
 	[3] : "",
 	[4] : "",
 };
@@ -134,7 +134,7 @@ this.mensagensNpcs[18] = {
 	[4] : "",
 };
 this.mensagensNpcs[19] = {
-	[0] : "",
+	[0] : "Nunca tem nada de interessante nesses quadros",
 	[1] : "",
 	[2] : "",
 	[3] : "",
@@ -162,14 +162,14 @@ this.mensagensNpcs[22] = {
 	[4] : "",
 };
 this.mensagensNpcs[23] = {
-	[0] : "",
+	[0] : "Ser professora não é facil",
 	[1] : "",
 	[2] : "",
 	[3] : "",
 	[4] : "",
 };
 this.mensagensNpcs[24] = {
-	[0] : "",
+	[0] : "Eu até te venderia algo mas não temos nada",
 	[1] : "",
 	[2] : "",
 	[3] : "",
@@ -183,21 +183,21 @@ this.mensagensNpcs[25] = {
 	[4] : "",
 };
 this.mensagensNpcs[26] = {
-	[0] : "",
+	[0] : "Queria o livro de game of  thrones mas não achei",
 	[1] : "",
 	[2] : "",
 	[3] : "",
 	[4] : "",
 };
 this.mensagensNpcs[27] = {
-	[0] : "",
+	[0] : "Conhecimento é sempre bom por isso venho a biblioteca várias vezes",
 	[1] : "",
 	[2] : "",
 	[3] : "",
 	[4] : "",
 };
 this.mensagensNpcs[28] = {
-	[0] : "",
+	[0] : "Acabei de chegar acho que estou atrasado ou não o.O",
 	[1] : "",
 	[2] : "",
 	[3] : "",
