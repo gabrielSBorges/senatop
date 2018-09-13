@@ -1,6 +1,6 @@
 function colisaoCoordenadas(jogador){
 //portas trancadas para o teste
-  colisao(jogador,1452,1115,250,20);
+  /*colisao(jogador,1452,1115,250,20);
   colisao(jogador,1730,1105,330,35);
   colisao(jogador,2172, 1490,270,27);
   colisao(jogador,2500, 1490,270,27);
@@ -392,8 +392,86 @@ function colisaoCoordenadas(jogador){
   colisao(jogador, 2620, 4987, 32, 32);
 
   //NPCS
+
+  //frente
   colisao(jogador, 2592, 1520, 32, 32);
+  //lado
   colisao(jogador, 1344, 1604, 32, 25);
-  colisao(jogador, 864, 1520, 32, 35);
+  colisao(jogador, 864, 1520, 32, 32);
   colisao(jogador, 2335, 2070, 32, 25);
+
+
+  //npc quest (floresta)
+  colisao(jogador,3552,1259, 32, 32);
+  
+  //npc porta (B casa do meio)
+  colisao(jogador,1728,1165,32,25);
+
+  
+  colisao(jogador,1200, 1069,32,25);
+*/
+  colisao(jogador,864 ,5616,32,32);
+
+  colisao(jogador, 672,5952,32,44);
+
+  colisao(jogador, 1152,6720,32,42);
+
+  colisao(jogador,864 ,5616,32,32);
+
+
+
+  colisao(jogador,576, 6624,32,44);
+
+  colisao(jogador,576, 6624,32,44);
+
+  colisao(jogador,3168, 6048,32,44);
+  
+  colisao(jogador,4124, 6048,32,44);
+
+  colisao(jogador,3456, 4608,32,44);
+   
+  colisao(jogador,3360, 4992,32,44);
+
+  colisao(jogador,2928, 5414,32,44);
+  colisao(jogador,2592,6144,32,44);
+
+  colisao(jogador,1344,6048,32,44);
+  
+  colisao(jogador,384, 5366,32,44);
+  
+  colisao(jogador,816,3542,32,44);
+  
+  colisao(jogador,336,3984,32,44);
+ 
+  colisao(jogador,1872 ,3984,32,44);
+ 
+
+  colisao(jogador,720 ,4512,32,44);
+
+  colisao(jogador,1594 ,3970,32,44);
+  
+  colisao(jogador,2112, 3552,32,44);
+
+  colisao(jogador,1824, 3792,32,44);
+
+
+  colisao(jogador, 1349,5400,32,44);
+
+  colisao(jogador,1680 ,5472,32,44);
+  
+  colisao(jogador,432 ,6192,32,44);
+ 
+  colisao(jogador,1488 ,6624,32,44);
+ 
+  /*
+
+
+
+colisao(jogador,,32,44);
+colisao(jogador,,32,44);
+colisao(jogador,,32,44);
+colisao(jogador,,32,44);
+colisao(jogador,,32,44);
+colisao(jogador,,32,44);
+  */
 }
