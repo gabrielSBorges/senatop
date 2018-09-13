@@ -2,28 +2,22 @@
 	cnv = document.querySelector("canvas");
 	ctx = cnv.getContext("2d");
 
-	var M = 77;
-	var F = 70;
-	var ENTER = 13;
-	var DIREITA = 39;
-	var ESQUERDA = 37;
-
-	var mensagemAtual = 0;
-	var selecionandoPersonagem = false;
-	var pronto = false;
-	var rodandoInicio = true;
+	this.paginaAtual = 0;
+	this.selecionando = false;
+	this.pronto = false;
+	this.mostraInstrucao = true;
+	this.selecionado = false;
+	this.rodandoInicio = true;
 
 	var linha1 = "";
 	var linha2 = "";
 	var linha3 = "";
-
-	var texto1 = "";
-	var texto2 = "";
-	var texto3 = "";
+	var linha4 = "";
+	var linha5 = "";
 
 	var textoCor = "#2d3436";
-    var textoFonte = "19px Arial Black";
-    var textoAlinhamento = "left";
+	var textoFonte = "19px Arial Black";
+	var textoAlinhamento = "left";
 	var textoPosX = 348;
 	var textoPosY = 135;
 
@@ -31,20 +25,20 @@
 	var cenarioBackground = new Image();
 	cenarioBackground.src = "imgs/cenas/cena_inicio.png";
 
-	var apresentadorSprite = new Image();
-	apresentadorSprite.src = "imgs/personagens/outros/professor_teste.png";
+	this.apresentadorSprite = new Image();
+	this.apresentadorSprite.src = "imgs/personagens/outros/professor_teste.png";
+
+	this.meninaSprite = new Image();
+	this.meninaSprite.src = "imgs/personagens/protagonistas/menina_sprite.png";
+
+	this.meninoSprite = new Image();
+	this.meninoSprite.src = "imgs/personagens/protagonistas/menino_sprite.png";
+
+	this.jogadorSprite = new Image();
+	this.jogadorSprite.src = "";
 
 	var caixaMensagemSprite = new Image();
 	caixaMensagemSprite.src = "imgs/outros/caixa_mensagem.png";
-
-	var meninaSprite = new Image();
-	meninaSprite.src = "imgs/personagens/protagonistas/menina_sprite.png";
-
-	var meninaSprite = new Image();
-	meninaSprite.src = "imgs/personagens/protagonistas/menino_sprite.png";
-
-	var jogadorSprite = new Image();
-	jogadorSprite.src = "";
 
 //CRIAÇÃO DOS ELEMENTOS/OBJETOS
 	var cenario = new Cena(cenarioBackground);
@@ -57,112 +51,111 @@
 	apresentador.posicaoX = 30;
 	apresentador.posicaoY = 80;
 
-	var caixaMensagem = new Sprite(caixaMensagemSprite);
-	caixaMensagem.largura = 460;
-	caixaMensagem.altura = 200;
-	caixaMensagem.posicaoX = 310;
-	caixaMensagem.posicaoY = 100;
+	var menino = new Sprite(meninoSprite);
+	menino.largura = 32;
+	menino.altura = 50;
+	menino.posicaoX = 580;
+	menino.posicaoY = 400;
+
+	var menina = new Sprite(meninaSprite);
+	menina.largura = 32;
+	menina.altura = 50;
+	menina.posicaoX = 480;
+	menina.posicaoY = 400;
+
+	this.caixaMensagem = new Sprite(caixaMensagemSprite);
+	this.caixaMensagem.largura = 460;
+	this.caixaMensagem.altura = 200;
+	this.caixaMensagem.posicaoX = 310;
+	this.caixaMensagem.posicaoY = 100;
+
 
 //FUNÇÕES PRINCIPAIS
 	//MOVIMENTAÇÃO DO JOGADOR
-	if (rodandoInicio){
-		window.addEventListener("keydown", function(e){
-			pressionaTecla(e);
-		}, false);
-	}
+	window.addEventListener("keydown", function(e){
+		pressionaTecla(e);
+	}, false);
 
-	function pressionaTecla(e){
-		switch (e.keyCode){
-			case DIREITA:
-				if (mensagemAtual < 3) {
-					mensagemAtual += 1;
-				}
-				break;
-			case ESQUERDA:
-				if (mensagemAtual > 0) {
-					mensagemAtual -= 1;
-				}
-				break;
-			case F:
-				if (selecionandoPersonagem){
-					jogadorSprite.src = "imgs/personagens/protagonistas/menina_sprite.png";
-					pronto = true;
-					console.log(pronto);
-					break;
-				}
-			case M:
-				if (selecionandoPersonagem){
-					jogadorSprite.src = "imgs/personagens/protagonistas/menino_sprite.png";
-					pronto = true;
-					console.log(pronto);
-					break;
-				}
-			case ENTER:
-				if (pronto) {
-					rodandoInicio = false;
-					cenaExploracao(jogadorSprite);
-					console.log(pronto);
-					break;
-				}
 
-				if (mensagemAtual == 3){
-					selecionandoPersonagem = true;
-					console.log(pronto);
-					break;
-				}
-		}
-	}
-
-	function desenhaTexto(){
-		switch (mensagemAtual){
-			case 0:
-				linha1 = mensagensInicio[0][0];
-				linha2 = mensagensInicio[0][1];
-				linha3 = mensagensInicio[0][2];
-				break;
-			case 1:
-				linha1 = mensagensInicio[1][0];
-				linha2 = mensagensInicio[1][1];
-				linha3 = mensagensInicio[1][2];
-				break;
-			case 2:
-				linha1 = mensagensInicio[2][0];
-				linha2 = mensagensInicio[2][1];
-				linha3 = mensagensInicio[2][2];
-				break;
-			case 3:
-				linha1 = mensagensInicio[3][0];
-				linha2 = mensagensInicio[3][1];
-				linha3 = mensagensInicio[3][2];
-				break;
-		}
-
-		ctx.fillStyle = textoCor;
-        ctx.font = textoFonte;
-        ctx.textAlign = textoAlinhamento;
-
-		texto1 = linha1;
-        ctx.fillText(texto1, textoPosX, textoPosY);
-
-        texto2 = linha2;
-        ctx.fillText(texto2, textoPosX, textoPosY + 25);
-
-		texto3 = linha3;
-        ctx.fillText(texto3, textoPosX, textoPosY + 50);
-	}
 
 	//DESENHA OS ELEMENTOS NA TELA
 	function desenhaElementos(){
 		ctx.save();
-		cenario.desenha(ctx);
-		apresentador.desenha(ctx);
+		if (!pronto) {
+			cenario.desenha(ctx);
+			apresentador.desenha(ctx);
 
-		if (!selecionandoPersonagem){
+			if (paginaAtual == 3) {
+				menino.desenha(ctx);
+				menina.desenha(ctx);
+			}
+
 			caixaMensagem.desenha(ctx);
 			desenhaTexto();
-		}
 
+			if (this.mostraInstrucao){
+				desenhaInstrução();
+			}
+
+		}
 		ctx.restore();
+	}
+
+	function desenhaTexto(){
+	  switch (paginaAtual){
+		case 0:
+		  linha1 = mensagensInicio[0][0];
+		  linha2 = mensagensInicio[0][1];
+		  linha3 = mensagensInicio[0][2];
+			linha4 = mensagensInicio[0][3];
+			linha5 = mensagensInicio[0][4];
+		  break;
+		case 1:
+		  linha1 = mensagensInicio[1][0];
+		  linha2 = mensagensInicio[1][1];
+		  linha3 = mensagensInicio[1][2];
+			linha4 = mensagensInicio[1][3];
+			linha5 = mensagensInicio[1][4];
+		  break;
+		case 2:
+		  linha1 = mensagensInicio[2][0];
+		  linha2 = mensagensInicio[2][1];
+		  linha3 = mensagensInicio[2][2];
+			linha4 = mensagensInicio[2][3];
+			linha5 = mensagensInicio[2][4];
+		  break;
+		case 3:
+		  linha1 = mensagensInicio[3][0];
+		  linha2 = mensagensInicio[3][1];
+		  linha3 = mensagensInicio[3][2];
+			linha4 = mensagensInicio[3][3];
+			linha5 = mensagensInicio[3][4];
+		  break;
+		case 4:
+		  linha1 = mensagensInicio[4][0];
+		  linha2 = mensagensInicio[4][1];
+		  linha3 = mensagensInicio[4][2];
+			linha4 = mensagensInicio[4][3];
+			linha5 = mensagensInicio[4][4];
+		  break;
+	  }
+
+		ctx.fillStyle = textoCor;
+		ctx.font = textoFonte;
+		ctx.textAlign = textoAlinhamento;
+
+		ctx.fillText(linha1, textoPosX, textoPosY);
+		ctx.fillText(linha2, textoPosX, textoPosY + 25);
+		ctx.fillText(linha3, textoPosX, textoPosY + 50);
+		ctx.fillText(linha4, textoPosX, textoPosY + 75);
+		ctx.fillText(linha5, textoPosX, textoPosY + 100);
+	}
+
+	function desenhaInstrução(){
+		ctx.fillStyle = "#dfe6e9";
+		ctx.font = "15px Arial Black";
+		ctx.textAlign = textoAlinhamento;
+		ctx.fillText("Use a seta direita/esquerda para avançar/voltar as falas.", 300, 560);
 	}
 
 	//ATUALIZAÇÃO E INICIALIZAÇÃO

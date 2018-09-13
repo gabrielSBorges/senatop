@@ -71,8 +71,7 @@ function cenaExploracao(jogadorSprite){
 	    habilitaDialogo(jogador.proximidadeDireita, jogador.proximidadeEsquerda, jogador.proximidadeCima, jogador.proximidadeBaixo);
 	    jogador.verificaArea(jogador.posicaoX, jogador.posicaoY, jogador.largura, jogador.altura);
 	    jogador.verificaProximidadeInteracao(jogador.posicaoX, jogador.posicaoY, jogador.largura, jogador.altura);
-
-			teleportaJogador(jogador.posicaoX, jogador.posicaoY);
+		teleportaJogador(jogador);
 	}
 
 	function iniciar() {

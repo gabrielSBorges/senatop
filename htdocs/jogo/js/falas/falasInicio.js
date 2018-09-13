@@ -25,6 +25,13 @@ this.mensagensInicio[3] = {
 	[0] : "Vamos ao que  interessa, selecione  o",
 	[1] : "personagem com o qual  você mais se",
 	[2] : "identifica:",
-	[3] : "",
-	[4] : "",
+	[3] : "Tecle F para personagem feminino.",
+	[4] : "Tecle M para personagem feminino.",
+};
+this.mensagensInicio[4] = {
+	[0] : "Muito bem! Você está pronto para co-",
+	[1] : "meçar. Caminhe pela instituição, con-",
+	[2] : "verse com outras pessoas e se puder,",
+	[3] : "aprenda com elas!",
+	[4] : "Pressione Enter para começar. ",
 };
