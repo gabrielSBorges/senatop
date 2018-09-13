@@ -55,13 +55,13 @@
 	menino.largura = 32;
 	menino.altura = 50;
 	menino.posicaoX = 580;
-	menino.posicaoY = 400;
+	menino.posicaoY = 245;
 
 	var menina = new Sprite(meninaSprite);
 	menina.largura = 32;
 	menina.altura = 50;
 	menina.posicaoX = 480;
-	menina.posicaoY = 400;
+	menina.posicaoY = 245;
 
 	this.caixaMensagem = new Sprite(caixaMensagemSprite);
 	this.caixaMensagem.largura = 460;
@@ -85,13 +85,13 @@
 			cenario.desenha(ctx);
 			apresentador.desenha(ctx);
 
+			caixaMensagem.desenha(ctx);
+			desenhaTexto();
+
 			if (paginaAtual == 3) {
 				menino.desenha(ctx);
 				menina.desenha(ctx);
 			}
-
-			caixaMensagem.desenha(ctx);
-			desenhaTexto();
 
 			if (this.mostraInstrucao){
 				desenhaInstrução();
