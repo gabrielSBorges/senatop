@@ -14,6 +14,8 @@ function Dialogo(cnv){
     this.texto1;
     this.texto2;
     this.texto3;
+		this.texto4;
+		this.texto5;
     this.textoCor = "#2d3436";
     this.textoFonte = "20px Arial Black sans-serif";
     this.textoAlinhamento = "left";
@@ -22,7 +24,7 @@ function Dialogo(cnv){
 
 
     //Métodos da classe
-    this.desenha = function (ctx, mensagemLinha1, mensagemLinha2, mensagemLinha3) {
+    this.desenha = function (ctx, mensagemLinha1, mensagemLinha2, mensagemLinha3, mensagemLinha4, mensagemLinha5) {
         //BORDA
         ctx.fillStyle = this.bordaCor;
         ctx.fillRect(this.bordaPosX, this.bordaPosY, this.bordaLargura, this.bordaAltura);
@@ -41,7 +43,13 @@ function Dialogo(cnv){
         this.texto2 = mensagemLinha2;
         ctx.fillText(this.texto2, this.textoPosX, this.textoPosY + 25);
 
-		this.texto3 = mensagemLinha3;
+				this.texto3 = mensagemLinha3;
         ctx.fillText(this.texto3, this.textoPosX, this.textoPosY + 50);
+
+				this.texto4 = mensagemLinha4;
+        ctx.fillText(this.texto4, this.textoPosX, this.textoPosY + 75);
+
+				this.texto5 = mensagemLinha5;
+        ctx.fillText(this.texto5, this.textoPosX, this.textoPosY + 100);
     }
 }

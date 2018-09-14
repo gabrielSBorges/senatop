@@ -53,7 +53,7 @@ function cenaExploracao(jogadorSprite){
 		}
 
 		if (dialogoAtivado) {
-			caixaDialogo.desenha(ctx, mensagemLinha1, mensagemLinha2, mensagemLinha3);
+			caixaDialogo.desenha(ctx, mensagemLinha1, mensagemLinha2, mensagemLinha3, mensagemLinha4, mensagemLinha5);
 		}
 	}
 
