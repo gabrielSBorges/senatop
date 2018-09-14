@@ -27,6 +27,7 @@ function Jogador(img){
 	this.CORRE = 90;
 	this.ENTER = 13;
 	this.INTERACAO = 88;
+	this.SAIR = 27;
 
 	//AREA DE RENDERIZACAO AO REDOR DO JOGADOR
 	this.areaEsquerda;
@@ -118,6 +119,11 @@ function Jogador(img){
 					}
 				}
 				break;
+
+			case this.SAIR:
+				document.location.href = "../home.php";
+			break;
+
 			case this.INTERACAO:
 				if (dialogoHabilitado) {
 					if (!pausado) {
