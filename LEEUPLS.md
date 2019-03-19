@@ -4,9 +4,8 @@
 
 
 **Instalação docker:**
-```sh
-http://cienciadacomputacao2012.blogspot.com/2018/04/instalando-docker-ce-no-ubuntu-1804.html
-```
+	http://cienciadacomputacao2012.blogspot.com/2018/04/instalando-docker-ce-no-ubuntu-1804.html
+
 **Executar o Docker sem precisar de sudo, adicione o seu usuário ao grupo docker:**
 ```sh
 sudo usermod -aG docker $(whoami)
@@ -58,7 +57,6 @@ docker run -it -v "/home/eric/projetos/html:/var/w" ubuntu
 ### Exemplo para vinculo de volume funcional de ambiente de desenvolvimento 
 ```sh
 docker run -p 8080:3000 -v "C:\Users\Alura\Desktop\volume-exemplo:/var/www" -w "/var/www" node npm start
-``` 
             |            |                                                   |            |    |
             |            |                                                   |            |    |
             |            |                                                   |            |    npm start - Executa o comando
@@ -66,6 +64,7 @@ docker run -p 8080:3000 -v "C:\Users\Alura\Desktop\volume-exemplo:/var/www" -w "
             |            |                                                  -w Acessa o diretorio   
 	    |           -v "path:path" - Liga os diretorios pc ao do container
 	   -p 8080:3000 - Liga a porta do container com a porta do PC
+``` 
 
 **Montra todos os detalhes do container**
 ```sh
@@ -90,16 +89,14 @@ docker images -q |xargs docker rmi
 **Mostrar o ip todos os containers rodando no PC possuem um rede privada liberada**
 
 
-#Criando Imagem
-Criando Dockerfile
-https://cursos.alura.com.br/course/docker-e-docker-compose/task/29389
+## Criando Imagem
+**Criando Dockerfile:**
+	https://cursos.alura.com.br/course/docker-e-docker-compose/task/29389
+
+**Construindo uma imagem**
 ```sh
-# contruindo uma imagem
 docker build -f Dockerfile -t rotaexata/base1 .
-
-
-
 ```
 
-Redes
-https://cursos.alura.com.br/course/docker-e-docker-compose/task/29413
+**Redes:**
+	https://cursos.alura.com.br/course/docker-e-docker-compose/task/29413
