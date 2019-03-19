@@ -12,16 +12,16 @@
 
 #### usuarios
 **administrador**  
-Marca se o usuário tem permissões de administrador.
+  Marca se o usuário tem permissões de administrador.
 
 **ativo**  
-Marca se o usuário está ativo ou não.
+  Marca se o usuário está ativo ou não.
 
 **created**  
-Data em que o usuário foi criado.  
+  Data em que o usuário foi criado.  
 
 **updated**  
-Data em que os dados do usuário foram atualizados.
+  Data em que os dados do usuário foram atualizados.
 
 **gestor**  
 
@@ -60,7 +60,7 @@ Data de validade da CNH.
 
 
 **tipo_cnh**  
-Categoria da CNH (**A** = Motos, triciclos, motonetas etc; **B** = Carros de até 8 lugares; **C** = Reboques de até 6.000 kg, **D** = Ônibus e micro-ônibus; **E** = Veículos com mais de uma unidade tracionada; **AB** = Carros e motos, **ACC** = Semelhante à categoria A).
+  Categoria da CNH (**A** = Motos, triciclos, motonetas etc; **B** = Carros de até 8 lugares; **C** = Reboques de até 6.000     kg, **D** = Ônibus e micro-ônibus; **E** = Veículos com mais de uma unidade tracionada; **AB** = Carros e motos, **ACC** =   Semelhante à categoria A).
 
 **ibutton**  
 
