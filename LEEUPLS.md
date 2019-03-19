@@ -1,6 +1,6 @@
 # Docker e Containers
-	### Docker Compose: permite orquestrar vários containers docker-compose.yml
-	### Volumes é onde salvamos os dados nos containers 
+> - Docker Compose: permite orquestrar vários containers docker-compose.yml
+> - Volumes é onde salvamos os dados nos containers 
 
 **Instalação docker:**
 ```sh
@@ -12,7 +12,6 @@ sudo usermod -aG docker $(whoami)
 ```
 
 ## Comandos
-
 **inicia um container com base dos Docker hub exemplo para iniciar um container do ubuntu**
 ```sh
 docker run ubuntu
@@ -56,13 +55,16 @@ docker port 05025384675e
 docker run -it -v "/home/eric/projetos/html:/var/w" ubuntu
 ```
 
-#Exemplo para vinculo de volume funcional de ambiente de desenvolvimento
-#          -p 8080:3000 Liga a porta do container com a porta do PC
-#          |            -v "path:path" liga os diretorios pc ao do container
-#          |            |                                                   -w Acessa o diretorio 
-#          |            |                                                   |             node - imagem do dockerhub a ser usada
-#          |            |                                                   |             |    npm start - executa o comando 
+# Exemplo para vinculo de volume funcional de ambiente de desenvolvimento 
+```sh
 docker run -p 8080:3000 -v "C:\Users\Alura\Desktop\volume-exemplo:/var/www" -w "/var/www" node npm start
+```         |            |                                                   |            |    |
+            |            |                                                   |            |    |
+            |            |                                                   |            |    npm start - Executa o comando
+            |            |                                                   |            node - Imagem do dockerhub usada   
+            |            |                                                  -w Acessa o diretorio   
+	    |           -v "path:path" - Liga os diretorios pc ao do container
+	   -p 8080:3000 - Liga a porta do container com a porta do PC
 
 # Montra todos os detalhes do container
 docker inspect 05025384675e
