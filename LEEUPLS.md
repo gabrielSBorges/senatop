@@ -86,7 +86,7 @@ docker ps -q |xargs docker rm
 docker images -q |xargs docker rmi
 ```
 **Mostrar o ip todos os containers rodando no PC possuem um rede privada liberada**
-
+---
 
 ## Criando Imagem
 **Criando Dockerfile:** https://cursos.alura.com.br/course/docker-e-docker-compose/task/29389
