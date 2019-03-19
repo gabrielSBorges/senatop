@@ -3,8 +3,7 @@
 > - Volumes é onde salvamos os dados nos containers 
 
 
-**Instalação docker:**
-	http://cienciadacomputacao2012.blogspot.com/2018/04/instalando-docker-ce-no-ubuntu-1804.html
+**Instalação docker:** http://cienciadacomputacao2012.blogspot.com/2018/04/instalando-docker-ce-no-ubuntu-1804.html
 
 **Executar o Docker sem precisar de sudo, adicione o seu usuário ao grupo docker:**
 ```sh
@@ -12,31 +11,31 @@ sudo usermod -aG docker $(whoami)
 ```
 
 ## Comandos
-**inicia um container com base dos Docker hub exemplo para iniciar um container do ubuntu:**
+**Inicia um container com base dos Docker hub exemplo para iniciar um container do ubuntu:**
 ```sh
 docker run ubuntu
 ```
-**lista todas os containers rodando:**
+**Lista todas os containers rodando:**
 ```sh
 docker ps 
 ```
-**lista todas os containers criados:**
+**Lista todas os containers criados:**
 ```sh
 docker ps -a
 ```
-**inicia um container:**
+**Inicia um container:**
 ```sh
 docker start 05025384675e
 ```
-**inicia um container e vincula ao terminal - permite acessar o terminal do container:**
+**Inicia um container e vincula ao terminal - permite acessar o terminal do container:**
 ```sh
 docker start -a -i 05025384675e
 ```
-**para um container:**
+**Para um container:**
 ```sh
 docker stop 05025384675e
 ```
-**remover container:** 
+**Remover container:** 
 ```sh
 docker rm 05025384675e
 ```
@@ -44,15 +43,15 @@ docker rm 05025384675e
 ```sh
 docker run -d -P imagem 
 ```
-**consulta  a porta do processo:**
+**Consulta  a porta do processo:**
 ```sh
 docker port 05025384675e
 ```
 **Montar um volume específico num container ligando um diretório entre o seu PC e o container, assim mantendo os dados salvos - bom para armazenar os fontes**
 ```sh
 docker run -it -v "/home/eric/projetos/html:/var/w" ubuntu
-```
                -v Caminho no PC           Caminho no container
+```
 
 ### Exemplo para vinculo de volume funcional de ambiente de desenvolvimento 
 ```sh
@@ -90,13 +89,11 @@ docker images -q |xargs docker rmi
 
 
 ## Criando Imagem
-**Criando Dockerfile:**
-	https://cursos.alura.com.br/course/docker-e-docker-compose/task/29389
+**Criando Dockerfile:** https://cursos.alura.com.br/course/docker-e-docker-compose/task/29389
 
 **Construindo uma imagem**
 ```sh
 docker build -f Dockerfile -t rotaexata/base1 .
 ```
 
-**Redes:**
-	https://cursos.alura.com.br/course/docker-e-docker-compose/task/29413
+**Redes:** https://cursos.alura.com.br/course/docker-e-docker-compose/task/29413
