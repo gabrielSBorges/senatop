@@ -1,27 +1,87 @@
-# Ambiente de desenvolvimento
+##Tabelas e campos
 
-## Instalação docker-compose via terminal do linux:
-```sh
-sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-```
-### Entrar no diretório /projetos/docker/backend para poder iniciar o ambiente
+####adesoes
 
-**Iniciar o ambiente com -d para não prender o terminal:**
-```sh
-docker-compose up -d
-```
-**Acessar terminal do container:**
-```sh
-docker exec -it arbiter /bin/bash
-```
-### Os comandos abaixo devem ser executados dentro do terminal do container
+####destinos
 
-**Primeiro acesso:**
-```sh
-npm install
-```
-**Executar o arbiter offline:**
-```sh
-sls offline
-```
+####documentos
+
+####empresas
+
+####login
+
+####usuarios
+>**administrador**
+>>Marca se o usuário tem permissões de administrador.
+
+>**ativo**
+>>Marca se o usuário está ativo ou não.
+
+>**created**
+>>Data em que o usuário foi criado.  
+
+>**updated**
+>>Data em que os dados do usuário foram atualizados.
+
+>**gestor**
+>>
+
+>**grupo_id**
+>>
+
+>**aceite_contrato**
+>>Informações sobre a aceitação do contrato (Data, hora, IP e CPF)
+
+>**login**
+>>Nome de usuário usado para efetuar o login no sistema.
+
+>**avatar**
+>>Imagem do perfil do usuário.
+
+>**cargo**
+>>Cargo/Setor ao qual o usuário pertence.
+
+>**telefone**
+>>Telefone do usuário.
+
+>**categoria_id**
+>>ID da categoria à qual pertence o usuário.
+
+>**cpf**
+>>CPF do usuário.
+
+>**cnh**
+>>Número da CNH do motorista.
+
+>**cnh_validade**
+>>Data de validade da CNH.
+
+>**preferencia_mapa**
+>>
+
+>**tipo_cnh**
+>>Categoria da CNH (**A** = Motos, triciclos, motonetas etc; **B** = Carros de até 8 lugares; **C** = Reboques de até 6.000 kg, **D** = Ônibus e micro-ônibus; **E** = Veículos com mais de uma unidade tracionada; **AB** = Carros e motos, **ACC** = Semelhante à categoria A).
+
+>**ibutton**
+>>
+
+>**motorista**
+>>Marca se o usuário é um motorista ou não.
+
+>**dt_nascimento**
+>>Data de nascimento do usuário.
+
+>**rastreador_status_app**
+>>
+
+>**tipo_rastreamento_app**
+>>
+
+>**opcionais_app**
+>>
+
+>**valor_mensal_app**
+>>
+
+>**nao_receber_email**
+>>
