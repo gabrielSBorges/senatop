@@ -1,71 +1,71 @@
-##Tabelas e campos
+## Tabelas e campos
 
-####adesoes
+#### adesoes
 
-####destinos
+#### destinos
 
-####documentos
+#### documentos
 
-####empresas
+#### empresas
 
-####login
+#### login
 
-####usuarios
->**administrador**
->>Marca se o usuário tem permissões de administrador.
+#### usuarios
+**administrador**
+Marca se o usuário tem permissões de administrador.
 
->**ativo**
->>Marca se o usuário está ativo ou não.
+**ativo**
+Marca se o usuário está ativo ou não.
 
->**created**
->>Data em que o usuário foi criado.  
+**created**
+Data em que o usuário foi criado.  
 
->**updated**
->>Data em que os dados do usuário foram atualizados.
+**updated**
+Data em que os dados do usuário foram atualizados.
 
->**gestor**
->>
+**gestor**
 
->**grupo_id**
->>
 
->**aceite_contrato**
->>Informações sobre a aceitação do contrato (Data, hora, IP e CPF)
+**grupo_id**
 
->**login**
->>Nome de usuário usado para efetuar o login no sistema.
 
->**avatar**
->>Imagem do perfil do usuário.
+**aceite_contrato**
+Informações sobre a aceitação do contrato (Data, hora, IP e CPF)
 
->**cargo**
->>Cargo/Setor ao qual o usuário pertence.
+**login**
+Nome de usuário usado para efetuar o login no sistema.
 
->**telefone**
->>Telefone do usuário.
+**avatar**
+Imagem do perfil do usuário.
 
->**categoria_id**
->>ID da categoria à qual pertence o usuário.
+**cargo**
+Cargo/Setor ao qual o usuário pertence.
 
->**cpf**
->>CPF do usuário.
+**telefone**
+Telefone do usuário.
 
->**cnh**
->>Número da CNH do motorista.
+**categoria_id**
+ID da categoria à qual pertence o usuário.
 
->**cnh_validade**
->>Data de validade da CNH.
+**cpf**
+CPF do usuário.
 
->**preferencia_mapa**
->>
+**cnh**
+Número da CNH do motorista.
 
->**tipo_cnh**
->>Categoria da CNH (**A** = Motos, triciclos, motonetas etc; **B** = Carros de até 8 lugares; **C** = Reboques de até 6.000 kg, **D** = Ônibus e micro-ônibus; **E** = Veículos com mais de uma unidade tracionada; **AB** = Carros e motos, **ACC** = Semelhante à categoria A).
+**cnh_validade**
+Data de validade da CNH.
 
->**ibutton**
->>
+**preferencia_mapa**
 
->**motorista**
+
+**tipo_cnh**
+Categoria da CNH (**A** = Motos, triciclos, motonetas etc; **B** = Carros de até 8 lugares; **C** = Reboques de até 6.000 kg, **D** = Ônibus e micro-ônibus; **E** = Veículos com mais de uma unidade tracionada; **AB** = Carros e motos, **ACC** = Semelhante à categoria A).
+
+**ibutton**
+
+
+**motorista**
 >>Marca se o usuário é um motorista ou não.
 
 >**dt_nascimento**
