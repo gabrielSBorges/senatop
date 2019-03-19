@@ -1,99 +1,24 @@
-# Docker e Containers
-> - Docker Compose: permite orquestrar vários containers docker-compose.yml
-> - Volumes é onde salvamos os dados nos containers 
+# Ambiente de desenvolvimento
 
-
-**Instalação docker:** http://cienciadacomputacao2012.blogspot.com/2018/04/instalando-docker-ce-no-ubuntu-1804.html
-
-**Executar o Docker sem precisar de sudo, adicione o seu usuário ao grupo docker:**
+## Instalação docker-compose:
 ```sh
-sudo usermod -aG docker $(whoami)
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-## Comandos
-**Inicia um container com base dos Docker hub exemplo para iniciar um container do ubuntu:**
+**iniciar o ambiente com -d para não prender o terminal:**
 ```sh
-docker run ubuntu
+docker-compose up -d
 ```
-**Lista todas os containers rodando:**
+**acessar terminal do container:**
 ```sh
-docker ps 
+docker exec -it arbiter /bin/bash
 ```
-**Lista todas os containers criados:**
+**Primeiro acesso:**
 ```sh
-docker ps -a
+npm install
 ```
-**Inicia um container:**
+**Executar o arbiter:**
 ```sh
-docker start 05025384675e
+sls offline
 ```
-**Inicia um container e vincula ao terminal - permite acessar o terminal do container:**
-```sh
-docker start -a -i 05025384675e
-```
-**Para um container:**
-```sh
-docker stop 05025384675e
-```
-**Remover container:** 
-```sh
-docker rm 05025384675e
-```
-**Executa o container com (-d para liberar o teminal) (-P para vincular numa porta no PC):**
-```sh
-docker run -d -P imagem 
-```
-**Consulta  a porta do processo:**
-```sh
-docker port 05025384675e
-```
-**Montar um volume específico num container ligando um diretório entre o seu PC e o container, assim mantendo os dados salvos - bom para armazenar os fontes**
-```sh
-docker run -it -v "/home/eric/projetos/html:/var/w" ubuntu
-               -v Caminho no PC           Caminho no container
-```
-
-### Exemplo para vinculo de volume funcional de ambiente de desenvolvimento 
-```sh
-docker run -p 8080:3000 -v "C:\Users\Alura\Desktop\volume-exemplo:/var/www" -w "/var/www" node npm start
-            |            |                                                   |            |    |
-            |            |                                                   |            |    |
-            |            |                                                   |            |    npm start - Executa o comando
-            |            |                                                   |            node - Imagem do dockerhub usada   
-            |            |                                                  -w Acessa o diretorio   
-	    |           -v "path:path" - Liga os diretorios pc ao do container
-	   -p 8080:3000 - Liga a porta do container com a porta do PC
-``` 
-
-**Montra todos os detalhes do container**
-```sh
-docker inspect 05025384675e
-```
-**Acessa uma instancia em execução**
-```sh
-docker attach <container_name>
-```
-**Acessar terminal bash container**
-```sh
-docker exec -i -t 05025384675e /bin/bash
-```
-**Remover containers parados**
-```sh
-docker ps -q |xargs docker rm 
-```
-**Remover imagens paradas**
-```sh
-docker images -q |xargs docker rmi
-```
-**Mostrar o ip todos os containers rodando no PC possuem um rede privada liberada**
----
-
-## Criando Imagem
-**Criando Dockerfile:** https://cursos.alura.com.br/course/docker-e-docker-compose/task/29389
-
-**Construindo uma imagem**
-```sh
-docker build -f Dockerfile -t rotaexata/base1 .
-```
-
-**Redes:** https://cursos.alura.com.br/course/docker-e-docker-compose/task/29413
