@@ -11,77 +11,77 @@
 #### login
 
 #### usuarios
-**administrador**
+**administrador**  
 Marca se o usuário tem permissões de administrador.
 
-**ativo**
+**ativo**  
 Marca se o usuário está ativo ou não.
 
-**created**
+**created**  
 Data em que o usuário foi criado.  
 
-**updated**
+**updated**  
 Data em que os dados do usuário foram atualizados.
 
-**gestor**
+**gestor**  
 
 
-**grupo_id**
+**grupo_id**  
 
 
-**aceite_contrato**
+**aceite_contrato**  
 Informações sobre a aceitação do contrato (Data, hora, IP e CPF)
 
-**login**
+**login**  
 Nome de usuário usado para efetuar o login no sistema.
 
-**avatar**
+**avatar**  
 Imagem do perfil do usuário.
 
-**cargo**
+**cargo**  
 Cargo/Setor ao qual o usuário pertence.
 
-**telefone**
+**telefone**  
 Telefone do usuário.
 
-**categoria_id**
+**categoria_id**  
 ID da categoria à qual pertence o usuário.
 
-**cpf**
+**cpf**  
 CPF do usuário.
 
-**cnh**
+**cnh**  
 Número da CNH do motorista.
 
-**cnh_validade**
+**cnh_validade**  
 Data de validade da CNH.
 
-**preferencia_mapa**
+**preferencia_mapa**  
 
 
-**tipo_cnh**
+**tipo_cnh**  
 Categoria da CNH (**A** = Motos, triciclos, motonetas etc; **B** = Carros de até 8 lugares; **C** = Reboques de até 6.000 kg, **D** = Ônibus e micro-ônibus; **E** = Veículos com mais de uma unidade tracionada; **AB** = Carros e motos, **ACC** = Semelhante à categoria A).
 
-**ibutton**
+**ibutton**  
 
 
-**motorista**
->>Marca se o usuário é um motorista ou não.
+**motorista**  
+Marca se o usuário é um motorista ou não.
 
->**dt_nascimento**
->>Data de nascimento do usuário.
+**dt_nascimento**  
+Data de nascimento do usuário.
 
->**rastreador_status_app**
->>
+**rastreador_status_app**  
 
->**tipo_rastreamento_app**
->>
 
->**opcionais_app**
->>
+**tipo_rastreamento_app**  
 
->**valor_mensal_app**
->>
 
->**nao_receber_email**
->>
+**opcionais_app**  
+
+
+**valor_mensal_app**  
+
+
+**nao_receber_email**  
+
