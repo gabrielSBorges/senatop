@@ -21,7 +21,7 @@ docker exec -it arbiter /bin/bash
 ```sh
 npm install
 ```
-**Executar o arbiter:**
+**Executar o arbiter offline:**
 ```sh
 sls offline
 ```
