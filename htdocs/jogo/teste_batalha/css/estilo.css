@@ -1,0 +1,22 @@
+#bordaCanvas{
+	border: 6px solid #182C61;
+	margin: auto;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 800px;
+	height: 600px;
+	border-radius: 15px;
+	background-color: #1e272e;
+}
+
+canvas{
+	border-radius: 9px;
+}
+
+body{
+	background-color: #353b48;
+}

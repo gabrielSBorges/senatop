@@ -111,11 +111,9 @@ function Jogador(img){
 			case this.ENTER:
 				if (!pausado) {
 					cenario.pausado = true;
-					console.log("Pausado!");
 				} else if (pausado) {
 					if (!dialogoAtivado){
 						cenario.pausado = false;
-						console.log("Rodando");
 					}
 				}
 				break;
@@ -133,7 +131,6 @@ function Jogador(img){
 						}
 					} else if (pausado) {
 						cenario.pausado = false;
-						console.log("Rodando");
 						dialogoAtivado = false;
 					}
 				}

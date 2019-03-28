@@ -1,5 +1,6 @@
 function Personagem(img){
 //Atributos da classe
+	//TIPO = 0: NPC, 1: DESAFIANTE, 2: PROFESSORES, 3: ELITE
 	this.tipo = 0;
 	this.id = 0;
 	this.srcX = 0;

@@ -17,10 +17,10 @@ function Dialogo(cnv){
 		this.texto4;
 		this.texto5;
     this.textoCor = "#2d3436";
-    this.textoFonte = "20px Arial Black sans-serif";
+    this.textoFonte = "18.5px Arial Black sans-serif";
     this.textoAlinhamento = "left";
     this.textoPosX = 20;
-    this.textoPosY = 500;
+    this.textoPosY = 490;
 
 
     //Métodos da classe
@@ -41,15 +41,15 @@ function Dialogo(cnv){
         ctx.fillText(this.texto1, this.textoPosX, this.textoPosY);
 
         this.texto2 = mensagemLinha2;
-        ctx.fillText(this.texto2, this.textoPosX, this.textoPosY + 25);
+        ctx.fillText(this.texto2, this.textoPosX, this.textoPosY + 23);
 
 				this.texto3 = mensagemLinha3;
-        ctx.fillText(this.texto3, this.textoPosX, this.textoPosY + 50);
+        ctx.fillText(this.texto3, this.textoPosX, this.textoPosY + 48);
 
 				this.texto4 = mensagemLinha4;
-        ctx.fillText(this.texto4, this.textoPosX, this.textoPosY + 75);
+        ctx.fillText(this.texto4, this.textoPosX, this.textoPosY + 72);
 
 				this.texto5 = mensagemLinha5;
-        ctx.fillText(this.texto5, this.textoPosX, this.textoPosY + 100);
+        ctx.fillText(this.texto5, this.textoPosX, this.textoPosY + 94);
     }
 }

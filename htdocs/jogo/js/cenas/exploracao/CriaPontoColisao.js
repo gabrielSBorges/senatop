@@ -1,13 +1,11 @@
+
 function colisaoCoordenadas(jogador){
-//portas trancadas para o teste
-  /*colisao(jogador,1452,1115,250,20);
-  colisao(jogador,1730,1105,330,35);
-  colisao(jogador,2172, 1490,270,27);
-  colisao(jogador,2500, 1490,270,27);
-  colisao(jogador,404, 1020,580,15);
-  colisao(jogador,1015, 1010,282,25);
+  //portão
+
   colisao(jogador,2207,2600,200,80);
-//------------
+
+  //------------
+
   colisao(jogador,1452,1115,220,20);
   colisao(jogador,1730,1105,330,35);
   colisao(jogador,2172, 1490,270,27);
@@ -89,7 +87,7 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,2560,5953,982,75);
   colisao(jogador,3694,5953,470,75);
   colisao(jogador,3694,6145,51,255);
-  colisao(jogador,3023,6145,51,235);
+  colisao(jogador,3023,6145,51,255);
   colisao(jogador,172, 5319,25,2000);
   colisao(jogador,197, 5323,1590,30);
   colisao(jogador,250, 5360,123,25);
@@ -106,6 +104,7 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,1340, 6335,345,70);
   colisao(jogador,958, 5370,337,25);
   colisao(jogador,958,5454,337,33);
+
   colisao(jogador,1318, 5370,500,25);
   colisao(jogador,1318,5454,266,33);
   colisao(jogador,1055,5572,140,15);
@@ -132,8 +131,8 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,190, 5620,97,10);
   colisao(jogador,190, 6055,97,10);
   colisao(jogador,190, 6486,97,10);
-  colisao(jogador,860, 6486,97,10);
-  colisao(jogador,1340, 6486,97,10);
+  colisao(jogador,860,6486,97,10);
+  colisao(jogador,1340,6486,97,10);
   colisao(jogador,1340,5810,97,10);
   colisao(jogador,2563,5042,121,15);
   colisao(jogador,3073,5042,89,15);
@@ -295,6 +294,8 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,1879, 4758,40,15);
   colisao(jogador,1976, 4758,40,15);
   colisao(jogador,2073, 4758,40,15);
+//
+
   colisao(jogador,190, 4566,87,10);
   colisao(jogador,660, 4566,97,10);
   colisao(jogador, 2068, 4566,97,10);
@@ -303,32 +304,33 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,385,4507,95,25);
   colisao(jogador,864,4507,95,25);
   colisao(jogador,1872,4507,95,25);
-  colisao(jogador,2013,3979,143,25);
-  colisao(jogador,1659,3959,143,25);
+
+  colisao(jogador,2013,3979,110,25);
+  colisao(jogador,1659,3959,110,25);
   colisao(jogador,1505,3803,110,1);
-  colisao(jogador,1984,3803,110,1);
-  colisao(jogador,1746,3803,110,1);
+  colisao(jogador,1890,3803,105,1);
+  colisao(jogador,1700,3803,105,1);
   colisao(jogador,1840,3615,110,1);
-  colisao(jogador,1600,3615,110,1);
+  colisao(jogador,1655,3615,105,1);
   colisao(jogador,1555, 3762,8,80);
-  colisao(jogador,1795, 3762,8,80);
-  colisao(jogador,2034, 3762,8,80);
-  colisao(jogador,1650,3568,8,80);
+  colisao(jogador,1748, 3762,8,80);
+  colisao(jogador,1940, 3762,8,80);
+  colisao(jogador,1700,3568,8,80);
   colisao(jogador,1891,3568,8,80);
   colisao(jogador,1521 ,3780,77,46);
-  colisao(jogador,1762,3780,77,46);
-  colisao(jogador,2003,3780,77,46);
-  colisao(jogador,1618, 3588,77,46);
+  colisao(jogador,1710,3780,77,46);
+  colisao(jogador,1910,3780,77,46);
+  colisao(jogador,1665, 3588,77,46);
   colisao(jogador,1859 , 3588,77,46);
   colisao(jogador,2069, 3496,37,126);
   colisao(jogador,1452,3937,33,67);
   colisao(jogador,172, 3484,2200,40);
   colisao(jogador,2157, 3434,20,1700);
   colisao(jogador,149 , 3434,46,1700);
-  colisao(jogador,149 ,4127,428,70);
+  colisao(jogador,149 ,4127,468,70);
   colisao(jogador,719  ,4127,427,70);
-  colisao(jogador,1100 , 3434,55,754);
   colisao(jogador,1388 , 3434,55,144);
+  colisao(jogador,1100 , 3700,55,490);
   colisao(jogador,1388 , 3700,55,546);
   colisao(jogador,1388,3890,828,70);
   colisao(jogador,1771,3890,55,340);
@@ -341,7 +343,39 @@ function colisaoCoordenadas(jogador){
   colisao(jogador,1102,4418,55,500);
   colisao(jogador,1677,4418,55,500);
   colisao(jogador,149, 4883,2200,10);
+  colisao(jogador,2369,2015,60,12);
+  colisao(jogador,3705,4531,123,92);
+  colisao(jogador,2986,4531,123,92);
 
+  colisao(jogador,181,3700,350,80);
+  colisao(jogador,628,3700,380,80);
+  colisao(jogador,618,3700,60,500);
+  colisao(jogador,240, 3940,40,15);
+  colisao(jogador,337,3940,40,15);
+  colisao(jogador,434, 3940,40,15);
+  colisao(jogador,531, 3940,40,15);
+  colisao(jogador,723, 3940,40,15);
+  colisao(jogador,820, 3940,40,15);
+  colisao(jogador,917, 3940,40,15);
+  colisao(jogador,1014,3940,40,15);
+  colisao(jogador,240, 4037,40,15);
+  colisao(jogador,337,4037,40,15);
+  colisao(jogador,434, 4037,40,15);
+  colisao(jogador,531, 4037,40,15);
+  colisao(jogador,723, 4037,40,15);
+  colisao(jogador,820, 4037,40,15);
+  colisao(jogador,917, 4037,40,15);
+  colisao(jogador,1014,4037,40,15);
+  colisao(jogador, 542,3476,260,90);
+
+  colisao(jogador, 179,3847,97,10);
+  colisao(jogador, 676,3847,81,10);
+  colisao(jogador,390,3754,71,63);
+  colisao(jogador,880,3754,71,63);
+  /*
+
+
+  */
   //Árvores meio do mapa
   colisao(jogador, 576, 1344, 96, 75);
   colisao(jogador, 3168, 1824, 96, 75);
@@ -359,6 +393,7 @@ function colisaoCoordenadas(jogador){
   colisao(jogador, 2976, 480, 96, 75);
 
   //Base Elite
+
   //BAIXO
   colisao(jogador, 2880, 4032, 240, 20);
   colisao(jogador, 2880, 4032, 20, 220);
@@ -385,93 +420,56 @@ function colisaoCoordenadas(jogador){
   colisao(jogador, 3648, 3848, 96, 20);
   colisao(jogador, 3792, 3848, 96, 20);
 
-  //Personagens
+
   //Elite
+  colisao(jogador, 2982, 3712, 32, 32);
+  colisao(jogador, 2982, 4100, 32, 32);
+  colisao(jogador, 3750, 3712, 32, 32);
+  colisao(jogador, 3750, 4100, 32, 32);
 
   //Professores
-  colisao(jogador, 2620, 4987, 32, 32);
 
   //NPCS
-
-  //frente
+  //mundo aberto
   colisao(jogador, 2592, 1520, 32, 32);
-  //lado
   colisao(jogador, 1344, 1604, 32, 25);
   colisao(jogador, 864, 1520, 32, 32);
   colisao(jogador, 2335, 2070, 32, 25);
-
-
-  //npc quest (floresta)
   colisao(jogador,3552,1259, 32, 32);
-  
-  //npc porta (B casa do meio)
-  colisao(jogador,1728,1165,32,25);
-
-  
+  colisao(jogador,1728,1165,32,32);
   colisao(jogador,1200, 1069,32,25);
-*/
-  colisao(jogador,864 ,5616,32,32);
+  colisao(jogador,432,2420,32,25);
+  colisao(jogador, 2880,384 ,32,44);
+  colisao(jogador, 3312,862,32,24);
+  colisao(jogador, 2688,2420,32,44);
+  colisao(jogador, 3072,1988,32,44);
 
-  colisao(jogador, 672,5952,32,44);
+  //bloco A
+  colisao(jogador,2124,3544 ,32,44);
+  colisao(jogador,1444,3714,32,24);
+  colisao(jogador,1724,4064 ,32,44);
+  colisao(jogador,1976,4506 ,32,44);
+  colisao(jogador,2084 ,4004 ,32,44);
+  colisao(jogador,405,3814 ,32,44);
+  colisao(jogador,714, 4506,32,44);
+  colisao(jogador,2075,4699 ,32,44);
+  colisao(jogador,689,4729 ,32,24);
+  colisao(jogador, 684, 3779 ,32,44);
+  colisao(jogador,481,3780,32,44);
 
-  colisao(jogador, 1152,6720,32,42);
+  //bloco B
+  colisao(jogador,869,5596 ,32,44);
+  colisao(jogador,1209,5942,32,44);
+  colisao(jogador,342,6616 ,32,44);
+  colisao(jogador,1064,5518 ,32,44);
+  colisao(jogador,1646,5513 ,32,44);
+  colisao(jogador,577,5379,32,43);
+  //bloco c
 
-  colisao(jogador,864 ,5616,32,32);
-
-
-
-  colisao(jogador,576, 6624,32,44);
-
-  colisao(jogador,576, 6624,32,44);
-
-  colisao(jogador,3168, 6048,32,44);
-  
-  colisao(jogador,4124, 6048,32,44);
-
-  colisao(jogador,3456, 4608,32,44);
-   
-  colisao(jogador,3360, 4992,32,44);
-
-  colisao(jogador,2928, 5414,32,44);
-  colisao(jogador,2592,6144,32,44);
-
-  colisao(jogador,1344,6048,32,44);
-  
-  colisao(jogador,384, 5366,32,44);
-  
-  colisao(jogador,816,3542,32,44);
-  
-  colisao(jogador,336,3984,32,44);
- 
-  colisao(jogador,1872 ,3984,32,44);
- 
-
-  colisao(jogador,720 ,4512,32,44);
-
-  colisao(jogador,1594 ,3970,32,44);
-  
-  colisao(jogador,2112, 3552,32,44);
-
-  colisao(jogador,1824, 3792,32,44);
-
-
-  colisao(jogador, 1349,5400,32,44);
-
-  colisao(jogador,1680 ,5472,32,44);
-  
-  colisao(jogador,432 ,6192,32,44);
- 
-  colisao(jogador,1488 ,6624,32,44);
- 
-  /*
-
-
-
-colisao(jogador,,32,44);
-colisao(jogador,,32,44);
-colisao(jogador,,32,44);
-colisao(jogador,,32,44);
-colisao(jogador,,32,44);
-colisao(jogador,,32,44);
-  */
-}
+  colisao(jogador,3226,4981 ,32,44);
+  colisao(jogador,4124,6040,32,44);
+  colisao(jogador,2951,4584,32,44);
+  colisao(jogador,2844,6162,32,44);
+  colisao(jogador,3460,5832,32,24);
+  colisao(jogador,3080,5609,32,44);
+  }

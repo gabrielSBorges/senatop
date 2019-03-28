@@ -1,15 +1,15 @@
 this.mensagensProfessores = [];
 
 this.mensagensProfessores[0] = {
-	[0] : "Eai novato, beleza cara?! Já ouviu falar do GitHub? É uma plataforma de controle de versão.",
-	[1] : "É uma plataforma de controle de versão. A propósito eu ouvi boatos de que na floresta tem  ",
-	[2] : "um estudante que conheçe muuuito sobre PHP, muitas vezes chamam ele de louco! Você deveria ",
-	[3] : "falar com ele. Vai que você aprende algo.",
+	[0] : "Eai novato, sou o  Jean!  Já ouviu falar do GitHub? É uma plataforma de controle de versão.",
+	[1] : "Eu deveria te oferecer um desafio, mas as coisas estão um pouco apertadas, por isso te darei",
+	[2] : "uma dica: Em uma floresta há um estudante que conheçe muuuito sobre PHP, muitas  vezes",
+	[3] : "chamam ele de louco! Você deveria falar com ele, vai que aprende algo.",
 	[4] : "",
 };
 this.mensagensProfessores[1] = {
-	[0] : "",
-	[1] : "",
+	[0] : "Esses baderneiros acham que podem fazer qualquer coisa. Mal sabem eles que estou ouvindo",
+	[1] : "tudo que dizem...",
 	[2] : "",
 	[3] : "",
 	[4] : "",
